@@ -1,0 +1,40 @@
+I0503 23:09:22.951717  36   4729 control_plane.c:348] control_plane_start: opened control port
+I0503 23:09:22.971355  36   4729 thread.c:280] get_cpuset: 0	0	16	0	8
+I0503 23:09:22.971363  36   4729 thread.c:280] get_cpuset: 1	0	16	0	8
+I0503 23:09:22.971366  36   4729 thread.c:280] get_cpuset: 2	0	16	1	8
+I0503 23:09:22.971368  36   4729 thread.c:280] get_cpuset: 3	0	16	1	8
+I0503 23:09:22.971370  36   4729 thread.c:280] get_cpuset: 4	0	16	2	8
+I0503 23:09:22.971372  36   4729 thread.c:280] get_cpuset: 5	0	16	2	8
+I0503 23:09:22.971374  36   4729 thread.c:280] get_cpuset: 6	0	16	3	8
+I0503 23:09:22.971376  36   4729 thread.c:280] get_cpuset: 7	0	16	3	8
+I0503 23:09:22.971378  36   4729 thread.c:280] get_cpuset: 8	0	16	4	8
+I0503 23:09:22.971380  36   4729 thread.c:280] get_cpuset: 9	0	16	4	8
+I0503 23:09:22.971382  36   4729 thread.c:280] get_cpuset: 10	0	16	5	8
+I0503 23:09:22.971384  36   4729 thread.c:280] get_cpuset: 11	0	16	5	8
+I0503 23:09:22.971386  36   4729 thread.c:280] get_cpuset: 12	0	16	6	8
+I0503 23:09:22.971388  36   4729 thread.c:280] get_cpuset: 13	0	16	6	8
+I0503 23:09:22.971390  36   4729 thread.c:280] get_cpuset: 14	0	16	7	8
+I0503 23:09:22.971392  36   4729 thread.c:280] get_cpuset: 15	0	16	7	8
+I0503 23:09:22.971406  38   4729 thread.c:369] start_worker_threads: Number of allowed_cores = 16
+I0503 23:09:22.971684  38   4729 thread.c:451] start_worker_threads: worker threads are ready
+I0503 23:09:22.971688  38   4729 thread.c:569] run_main_thread: started worker threads
+I0503 23:09:22.971694  38   4729 control_plane.c:385] control_plane_wait_until_done: expecting 1 clients
+I0503 23:09:23.153262  38   4729 control_plane.c:249] ctrl_accept: +++ SER <-- CLI ? CLI_HELLO
+I0503 23:09:23.153273  38   4729 control_plane.c:271] ctrl_accept: +++ SER <-- CLI   CLI_HELLO -T 2 -F 10 -l 60 -m 0
+I0503 23:09:23.153276  38   4729 control_plane.c:282] ctrl_accept: +++ SER --> CLI   SER_ACK -T 2 -F 10 -l 10
+I0503 23:09:23.153300  38   4729 control_plane.c:284] ctrl_accept: Control connection established with 127.0.0.1:53448
+I0503 23:09:23.153303  38   4729 control_plane.c:390] control_plane_wait_until_done: client 0 connected
+I0503 23:09:23.153313  38   4729 control_plane.c:397] control_plane_wait_until_done: expecting 1 notifications
+I0503 23:09:23.153316  38   4729 control_plane.c:64] recv_msg: --- SER <-- CLI   CLI_DONE (3)
+E0503 23:09:25.727415  38   4729 control_plane.c:75] recv_msg: ctrl_wait_client: Read error: read want 72 bytes, magic 42 type 3, have 0 0 0
+W0503 23:09:25.727453  38   4729 control_plane.c:294] ctrl_wait_client: Abandoning client
+I0503 23:09:25.727456  38   4729 control_plane.c:401] control_plane_wait_until_done: received notification 0
+I0503 23:09:25.727462  38   4729 thread.c:467] stop_worker_threads: told thread 0 to stop
+I0503 23:09:25.727465  38   4729 thread.c:467] stop_worker_threads: told thread 1 to stop
+I0503 23:09:25.727498  38   4729 thread.c:476] stop_worker_threads: joined thread 0
+I0503 23:09:25.727499  38   4729 thread.c:476] stop_worker_threads: joined thread 1
+I0503 23:09:25.727501  38   4729 thread.c:482] stop_worker_threads: reschedule=0
+I0503 23:09:25.727502  38   4729 thread.c:483] stop_worker_threads: delay=0
+I0503 23:09:25.727503  38   4729 thread.c:484] stop_worker_threads: sleep=0
+I0503 23:09:25.727504  38   4729 thread.c:580] run_main_thread: stopped worker threads
+I0503 23:09:25.727534  54   4729 control_plane.c:429] control_plane_stop: +++ SER --> CLI SER_BYE rate 0

@@ -1,0 +1,38 @@
+E0428 13:40:07.082679  36  13745 control_plane.c:134] connect_any: connect: Connection refused
+I0428 13:40:07.082758  36  13745 control_plane.c:170] ctrl_connect: +++ CLI --> SER   CLI_HELLO -T 2 -F 10 -l 10 -m 0
+I0428 13:40:07.082774  36  13745 control_plane.c:64] recv_msg: --- CLI <-- SER   SER_ACK (2)
+I0428 13:40:07.082815  36  13745 control_plane.c:179] ctrl_connect: +++ CLI <-- SER   SER_ACK -T 2 -F 10 -l 10 -m 0
+I0428 13:40:07.082818  36  13745 control_plane.c:343] control_plane_start: connected to control port
+I0428 13:40:07.103024  36  13745 thread.c:280] get_cpuset: 0	0	16	0	8
+I0428 13:40:07.103034  36  13745 thread.c:280] get_cpuset: 1	0	16	0	8
+I0428 13:40:07.103036  36  13745 thread.c:280] get_cpuset: 2	0	16	1	8
+I0428 13:40:07.103039  36  13745 thread.c:280] get_cpuset: 3	0	16	1	8
+I0428 13:40:07.103041  36  13745 thread.c:280] get_cpuset: 4	0	16	2	8
+I0428 13:40:07.103043  36  13745 thread.c:280] get_cpuset: 5	0	16	2	8
+I0428 13:40:07.103045  36  13745 thread.c:280] get_cpuset: 6	0	16	3	8
+I0428 13:40:07.103047  36  13745 thread.c:280] get_cpuset: 7	0	16	3	8
+I0428 13:40:07.103049  36  13745 thread.c:280] get_cpuset: 8	0	16	4	8
+I0428 13:40:07.103051  36  13745 thread.c:280] get_cpuset: 9	0	16	4	8
+I0428 13:40:07.103053  36  13745 thread.c:280] get_cpuset: 10	0	16	5	8
+I0428 13:40:07.103055  36  13745 thread.c:280] get_cpuset: 11	0	16	5	8
+I0428 13:40:07.103057  36  13745 thread.c:280] get_cpuset: 12	0	16	6	8
+I0428 13:40:07.103059  36  13745 thread.c:280] get_cpuset: 13	0	16	6	8
+I0428 13:40:07.103061  36  13745 thread.c:280] get_cpuset: 14	0	16	7	8
+I0428 13:40:07.103063  36  13745 thread.c:280] get_cpuset: 15	0	16	7	8
+I0428 13:40:07.103081  38  13745 thread.c:369] start_worker_threads: Number of allowed_cores = 16
+I0428 13:40:07.103783  38  13745 thread.c:451] start_worker_threads: worker threads are ready
+I0428 13:40:07.103788  38  13745 thread.c:569] run_main_thread: started worker threads
+I0428 13:40:07.103831  38  13747 thread.c:311] thread_time_start: Setting time_start in thread 1
+I0428 13:40:17.103813  38  13745 control_plane.c:371] control_plane_wait_until_done: finished sleep
+I0428 13:40:17.103827  38  13745 thread.c:467] stop_worker_threads: told thread 0 to stop
+I0428 13:40:17.103830  38  13745 thread.c:467] stop_worker_threads: told thread 1 to stop
+I0428 13:40:17.103873  38  13745 thread.c:476] stop_worker_threads: joined thread 0
+I0428 13:40:17.103929  38  13745 thread.c:476] stop_worker_threads: joined thread 1
+I0428 13:40:17.103932  38  13745 thread.c:482] stop_worker_threads: reschedule=0
+I0428 13:40:17.103933  38  13745 thread.c:483] stop_worker_threads: delay=0
+I0428 13:40:17.103935  38  13745 thread.c:484] stop_worker_threads: sleep=0
+I0428 13:40:17.103936  38  13745 thread.c:580] run_main_thread: stopped worker threads
+I0428 13:40:17.104110  63  13745 control_plane.c:308] ctrl_notify_server: +++ CLI --> SER   CLI_DONE rate 382381
+I0428 13:40:17.104127  63  13745 control_plane.c:412] control_plane_stop: notified server to exit
+I0428 13:40:17.104128  63  13745 control_plane.c:64] recv_msg: --- CLI <-- SER   CLI_BYE (4)
+I0428 13:40:17.104229  63  13745 control_plane.c:416] control_plane_stop: +++ CLI <-- SER   SER_BYE rate 0
